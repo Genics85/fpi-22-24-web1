@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivate</title>
+  </head>
+  <body class="bg-dark vh-100">
+    <nav class="container-fluid bg-dark shadow">
+      <div class="row">
+        <div class="col text-light d-flex">
+          <div class="col company d-flex align-items-center">
+            <img
+              class="image-fluid mr-2"
+              src="./images/logo.jpg"
+              height="38px"
+              alt=""
+            />
+            <h5>Motivate</h5>
+          </div>
+          <div
+            class="col actions text-decoration-none d-flex gap-4 align-items-center"
+          >
+            <a href="./index.html" class="text-light">
+              <h5>Home</h5>
+            </a>
+            <a href="./services.html" class="text-light">
+              <h5>Services</h5>
+            </a>
+
+            <a href="./contact.html" class="text-light">
+              <h5>Contact</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid p-0 h-100">
+      <div class="row banner mb-3">
+        <div class="col">
+          <img
+            src="https://media.istockphoto.com/id/1008681532/photo/male-operator-staff-with-team-working-call-center.jpg?s=612x612&w=0&k=20&c=-TkJIPv7s7eX1NqPlGk2yqNESr64LFdv8gcBM2TIXG4="
+            alt=""
+            class="m-0 w-100"
+          />
+        </div>
+      </div>
+      <div class="row h-75 d-flex justify-content-center align-items-center">
+        <div class="col-6 info w-100 d-flex flex-column align-items-center">
+          <div class="card info-card shadow p-3">
+            <div class="row">
+              <div
+                class="icon text-warning col-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="bi-telephone h2"></i>
+              </div>
+              <div
+                class="letters col d-flex flex-column justify-content-center align-items-start"
+              >
+                <p>call us directly at:</p>
+                <p class="text-primary font-weight-bold">
+                  <a href="tel:+900300400"> +23345238473</a>
+                </p>
+                <p>Get all numbers from here</p>
+              </div>
+            </div>
+          </div>
+          <div class="card info-card shadow p-3">
+            <div class="row">
+              <div
+                class="icon text-warning col-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="bi-chat h2"></i>
+              </div>
+              <div
+                class="letters col d-flex flex-column justify-content-center align-items-start"
+              >
+                <p>Chat with our sales team</p>
+                <button
+                  class="btn-warning rounded text-light"
+                  onclick="location.href='mailto: abc@example.com'"
+                >
+                  Send a message
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card info-card shadow p-3">
+            <div class="row">
+              <div class="col">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe
+                      class="gmap_iframe"
+                      width="100%"
+                      frameborder="0"
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                      src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=legon&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    ></iframe
+                    ><a href="https://formatjson.org/">format json</a>
+                  </div>
+                  <style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      width: 100%;
+                      height: 100%;
+                    }
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      width: 100%;
+                      height: 100%;
+                    }
+                    .gmap_iframe {
+                      height: 100% !important;
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card shadow p-3 w-50 bg-light">
+            <h5>Book a Meeting</h5>
+            <form action="" class="form-group">
+              <label for="namez">Name:</label>
+              <input
+                id="namez"
+                required
+                type="text"
+                placeholder="Enter full name"
+                class="form-control"
+              />
+              <label for="emailz">Email:</label>
+              <input
+                id="emailz"
+                required
+                type="email"
+                placeholder="Enter email"
+                class="form-control"
+              />
+              <label for="numberz">Number:</label>
+              <input
+                id="numberz"
+                required
+                type="text"
+                placeholder="Enter telephone number"
+                class="form-control"
+              />
+              <label for="mission">Mission:</label>
+              <select name="" id="mission" class="form-control">
+                <option value="Marriage motivation">Marriage motivation</option>
+                <option value="Career motivation">Career motivation</option>
+                <option value="General motivation">General motivation</option>
+              </select>
+              <button
+                class="btn btn-warning form-control text-light mt-3"
+                onclick="meetingBooked()"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
